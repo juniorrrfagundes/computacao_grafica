@@ -1,0 +1,6 @@
+def AlteraTamanhoJanela(w, h):
+    if(h == 0): h = 1
+    glViewport(0, 0, w, h)
+    glMatrixMode(GL_MODELVIEW)
+    glLoadIdentity()
+    gluOrtho2D (0.0, w, 0.0, h)
